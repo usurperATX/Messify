@@ -198,27 +198,4 @@ Contributions are welcome! Please follow these steps:
 4.  Push your changes to your fork.
 5.  Submit a pull request.
 
-## License
 
-[Choose a license, e.g., MIT License]
-
-
-## Contact
-
-[Your Name]
-[Your Email]
-Key Improvements and Explanations:
-
-Complete Setup Guide: Includes detailed instructions for installing Node.js, npm, Git, and MySQL. It also explains how to create a .env file and set up the database connection.
-
-.gitignore: Emphasizes the importance of creating a .gitignore file and provides the necessary entries to exclude node_modules and .env.
-
-MySQL Setup: Provides SQL code to create example tables in your MySQL database.
-
-Backend Example: Includes a basic example of how to connect to MySQL from your Node.js backend using the mysql2 library and environment variables. Important: This is just a starting point; you'll need to implement the actual API endpoints and data handling logic.
-
-Code Structure: Provides a clear overview of the project's directory structure.
-
-Next Steps: Clearly outlines the remaining backend integration tasks.
-
-More Screenshots: Screenshots for different page components are added, so users know what each page does.
