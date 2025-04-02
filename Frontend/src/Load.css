@@ -1,0 +1,59 @@
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+}
+
+.dots-container {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background: #2db8e7;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.merged {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merged .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: merge 0.5s forwards;
+}
+
+@keyframes merge {
+  to {
+    width: 50px;
+    height: 50px;
+    background: #00aaff;
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0.9);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+}

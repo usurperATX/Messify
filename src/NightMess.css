@@ -1,0 +1,60 @@
+/* NightMess.css */
+.night-mess-container {
+    padding: 20px;
+    overflow-y: auto; /* Make the container scrollable */
+    max-height: calc(100vh - 80px); /* Adjust max-height based on your navbar height */
+}
+
+.carousel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px;
+    max-width: 900px; /* Adjust width as needed */
+    margin: 20px auto;
+    position: relative;
+}
+
+.card {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 200px; /* Ensure cards are similar height */
+    transition: transform 0.3s ease;
+    position: relative;
+    border: 2px solid rgb(39, 136, 253)
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Larger card on hover */
+    z-index: 1; /* Bring active card to the front */
+    box-shadow: 0 0 10px 5px rgba(59, 150, 255, 0.564); /* Glow on Hover */
+}
+
+.home-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: 2px solid rgb(39, 136, 253)
+}
+
+.home-button:hover {
+    background-color: #000000; /* Darken the blue color */
+    border: 4px solid rgb(39, 136, 253)
+}

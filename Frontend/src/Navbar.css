@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 15px 30px;
+    width: 1400px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px 5px rgba(194, 194, 194, 0.3);
+    margin-top: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links li:nth-child(1):hover,
+.nav-links li:nth-child(2):hover,
+.nav-links li:nth-child(3):hover,
+.nav-links li:nth-child(4):hover,
+.nav-links li:nth-child(5):hover,
+.nav-links li:nth-child(6):hover{
+    color: #2db8e7; 
+}

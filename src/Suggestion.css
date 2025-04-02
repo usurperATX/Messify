@@ -1,0 +1,59 @@
+/* Suggestion.css */
+.suggestion-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.suggestion-modal form {
+    position: relative; /* Changed from absolute to relative */
+    background-color: #1e1e1e; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;
+}
+
+.suggestion-modal input[type="text"] {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.suggestion-modal label {
+    display: block;
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.suggestion-modal input[type="radio"] {
+    margin-right: 5px;
+}
+
+.suggestion-modal button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #2db8e7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+}
+
+.suggestion-modal button:hover {
+    background-color: #1e84a4;
+    box-shadow: 0 0 10px 3px rgba(45, 184, 231, 0.5);
+}
